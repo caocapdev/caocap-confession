@@ -1,0 +1,225 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  color: white;
+}
+
+body {
+  background: #12c2e9; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f64f59),
+    color-stop(#c471ed),
+    to(#12c2e9)
+  );
+  background: -o-linear-gradient(left, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 30px;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 10px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.input-label {
+  display: inline-block;
+  margin: 10px 0px;
+  margin-left: 20px;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  color: black;
+  margin: 0px 20px;
+  border-radius: 4px;
+}
+
+.cfs-input-text {
+  width: calc(100% - 40px);
+  height: 30vh;
+}
+
+button {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  font-size: 15px;
+  border: none;
+  padding: 5px 10px;
+  margin: 10px 20px;
+}
+
+button:active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.cfs-container {
+  margin: 10px 0px;
+}
+
+.cfs-item {
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: calc(100% - 40px);
+  border-radius: 4px;
+}
+
+.cfs-order {
+  opacity: 0.8;
+  font-size: 12px;
+  float: left;
+}
+
+.cfs-post-time {
+  opacity: 0.8;
+  font-size: 12px;
+  float: right;
+}
+
+.cfs-content {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.cfs-comment-heading {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.cfs-comment .input-label {
+  margin: 2px 0px;
+}
+
+.cfs-user-comment-name {
+  margin: 5px 0px;
+  width: 50%;
+}
+
+.cfs-user-comment-text {
+  margin: 5px 0px;
+  width: 100%;
+  height: 10vh;
+}
+
+.cfs-user-comment-post {
+  margin: 5px 0px;
+}
+
+.border-bottom {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.cfs-comment-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin: 5px 0px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.cfs-comment-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cfs-comment-post-time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.cfs-comment-content {
+  display: block;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  clear: both;
+  position: relative;
+  margin-top: -70px;
+  font-family: "Quicksand";
+  height: 70px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  line-height: 1.1;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+  footer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: calc(100% - 40% - 20px);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: calc(100% - 45% - 20px);
+    margin: 0 auto;
+  }
+}
